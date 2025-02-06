@@ -74,7 +74,6 @@
         return federalTax(taxableIncome,filingStatus);
     }
     function calculateStateTax(income, filingStatus, mortgage, studentLoan, medicalExpenses) {
-        debugger;
         // Massachusetts state tax rate is a flat rate of 5%
         const stateTaxRateMA = 0.05;
         let stateTaxableIncome = income - getDeductions(filingStatus, mortgage, studentLoan, medicalExpenses);
